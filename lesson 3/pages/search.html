@@ -8,36 +8,34 @@
 </head>
 
 <body>
-	<p>
 	<div>
 		<h1>Меню</h1>
 		<a href="../index.html">Главная</a>
 		<a href="registration.html">Регистрация</a>
 		<a href="authorization.html">Авторизация</a>
 	</div>
-	</p>
 	<h2>Поиск</h2>
-	<form action="">
+	<form action="12">
 		<fieldset>
 		<div>
-		<label for="Car body type">Выберете тип Кузова</label>
-		<select name="Car type" id="Car body type">
-			<option value="">--Пожалуйста Выберете Тип Кузова--</option>
+		<label for="Carbodytype">Выберите тип Кузова</label>
+		<select name="Cartype" id="Carbodytype">
+			<option value="">--Пожалуйста Выберите Тип Кузова--</option>
 			<option value="Sedan">Седан</option>
 			<option value="Coupe">Купе</option>
 			<option value="SUV">Внедорожник</option>
 			<option value="Hatchback">Хэтчбек</option>
-			<option value="Station wagon">Универсал</option>
+			<option value="Stationwagon">Универсал</option>
 			<option value="Cabriolet">Кабриолет</option>
 		</select>
 		</div>
 		</fieldset>
 		<fieldset>
 		<div>
-		<label for="Car Brand">Выберете Марку Авто</label>
-		<select name="Car Brand" id="Car Brand">
-			<option value="">--Пожалуйста Выберете Марку Авто--</option>
-			<option value="Mercedes Benz">Mercedes Benz</option>
+		<label for="CarBrand">Выберите Марку Авто</label>
+		<select name="CarBrand" id="CarBrand">
+			<option value="">--Пожалуйста Выберите Марку Авто--</option>
+			<option value="MercedesBenz">Mercedes Benz</option>
 			<option value="Porsche">Porsche</option>
 			<option value="Toyota">Toyota</option>
 			<option value="Mitsubishi">Mitsubishi</option>
@@ -48,9 +46,9 @@
 		</fieldset>
 		<fieldset>
 		<div>
-		<label for="Country Manufacturer">Выберете Страну Производитель</label>
-		<select name="Country Manufacturer" id="Country Manufacturer">
-			<option value="">--Пожалуйста Страну Производитель--</option>
+		<label for="CountryManufacturer">Выберите Страну Производитель</label>
+		<select name="CountryManufacturer" id="CountryManufacturer">
+			<option value="">--Пожалуйста Выберите Страну Производитель--</option>
 			<option value="Germany">Германия</option>
 			<option value="Japan">Япония</option>
 			<option value="China">Китай</option>
@@ -62,15 +60,15 @@
 		</fieldset>
 		<fieldset>
 		<div>
-		<label for="Car Cost">Стоимость Авто</label>
-			<input type="number" name="Cost1" id="Car Cost" placeholder="--От--" min="2000" max="9999">
-			<input type="number" name="Cost2" id="Car Cost" placeholder="--До--" min="2000" max="9999">
+		<label for="CarCost">Стоимость Авто</label>
+			<input type="number" name="Cost1" id="CarCost" placeholder="--От--" min="2000" max="9999">
+			<input type="number" name="Cost2" id="CarCost2" placeholder="--До--" min="2000" max="9999">
 		</div>
 		</fieldset>
 		<fieldset>
 		<div>
-		<label for="Year of issue">Выберете Год Выпуска Авто</label>
-		<select name="Year of issue" id="Year of issue">
+		<label for="Yearofissue">Выберите Год Выпуска Авто</label>
+		<select name="Yearofissue" id="Yearofissue">
 			<option value="">--ОТ--</option>
 			<option value="2020">2020</option>
 			<option value="2021">2021</option>
@@ -79,7 +77,7 @@
 			<option value="2024">2024</option>
 			<option value="2025">2025</option>
 		</select>
-		<select name="Year of issue" id="Year of issue">
+		<select name="Yearofissue2" id="Yearofissue2">
 			<option value="">--ДО--</option>
 			<option value="2020">2020</option>
 			<option value="2021">2021</option>
@@ -90,8 +88,107 @@
 		</select>
 		</div>
 		</fieldset>
-
-		
+		<fieldset>
+		<div>
+		<label for="Crashed">Выберите Состояние Авто</label>
+		<div>
+		<label for="Crashed">Битая</label>
+		<input type="checkbox" id="Crashed">
+		</div>
+		<div>
+		<label for="Oncredit">В кредите</label>
+		<input type="checkbox" id="Oncredit">
+		</div>
+		<div>
+		<label for="Nerastamozhennaya">Нерастаможенная</label>
+		<input type="checkbox" id="Nerastamozhennaya">
+		</div>
+		<div>
+		<label for="Afteranaccident">После ДТП</label>
+		<input type="checkbox" id="Afteranaccident">
+		</div>
+		<div>
+		<label for="PerfectCondition">Идеальное Состояние</label>
+		<input type="checkbox" id="PerfectCondition">
+		</div>
+		</div>
+		</fieldset>
+		<fieldset>
+		<div>
+		<label for="Petrol">Выберите Тип Топлива</label>
+		<div>
+		<label for="Petrol">Бензин</label>
+		<input type="checkbox" id="Petrol">
+		</div>
+		<div>
+		<label for="Disel">Дизель</label>
+		<input type="checkbox" id="Disel">
+		</div>
+		<div>
+		<label for="Gas">Газ</label>
+		<input type="checkbox" id="Gas">
+		</div>
+		</div>
+		</fieldset>
+		<fieldset>
+		<div>
+		<label for="Mechanical">Выберите Тип Коробки Передач</label>
+		<div>
+		<label for="Mechanical">Механическая</label>
+		<input type="checkbox" id="Mechanical">
+		</div>
+		<div>
+		<label for="Автомат">Автомат</label>
+		<input type="checkbox" id="Автомат">
+		</div>
+		</div>
+		</fieldset>
+		<fieldset>
+		<div>
+		<label for="ColorAuto">Выберите Цвет Авто</label>
+		<select name="ColorAuto" id="ColorAuto">
+			<option value="">--Пожалуйста Выберите Цвет Авто</option>
+			<option value="Green">Зеленый</option>
+			<option value="White">Белый</option>
+			<option value="Red">Красный</option>
+			<option value="Black">Черный</option>
+			<option value="Yellow">Желтый</option>
+			<option value="Pink">Розовый</option>
+		</select>
+		</div>
+		</fieldset>
+		<fieldset>
+		<div>
+		<label for="LeatherSalon">Выберите Доп Функции</label>
+		<div>
+		<label for="LeatherSalon">Кожаный Салон</label>
+		<input type="checkbox" id="LeatherSalon">
+		</div>
+		<div>
+		<label for="Autopilot">Автопилот</label>
+		<input type="checkbox" id="Autopilot">
+		</div>
+		<div>
+		<label for="RearCamera">Камера Заднего Вида</label>
+		<input type="checkbox" id="RearCamera">
+		</div>
+				<div>
+		<label for="FoldingRoof">Откидная Крыша</label>
+		<input type="checkbox" id="FoldingRoof">
+		</div>
+				<div>
+		<label for="CruiseControl">Круиз Контроль</label>
+		<input type="checkbox" id="CruiseControl">
+		</div>
+				<div>
+		<label for="Luke">Люк</label>
+		<input type="checkbox" id="Luke">
+		</div>
+		</div>
+		</fieldset>
+		<div>
+			<input type="submit" name="Зарегестрироваться" id="search">
+		</div>
 	</form>
 
 </body>
