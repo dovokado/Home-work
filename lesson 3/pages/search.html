@@ -10,14 +10,88 @@
 <body>
 	<p>
 	<div>
-		<h1>Поиск</h1>
+		<h1>Меню</h1>
 		<a href="../index.html">Главная</a>
 		<a href="registration.html">Регистрация</a>
 		<a href="authorization.html">Авторизация</a>
 	</div>
 	</p>
+	<h2>Поиск</h2>
 	<form action="">
+		<fieldset>
+		<div>
+		<label for="Car body type">Выберете тип Кузова</label>
+		<select name="Car type" id="Car body type">
+			<option value="">--Пожалуйста Выберете Тип Кузова--</option>
+			<option value="Sedan">Седан</option>
+			<option value="Coupe">Купе</option>
+			<option value="SUV">Внедорожник</option>
+			<option value="Hatchback">Хэтчбек</option>
+			<option value="Station wagon">Универсал</option>
+			<option value="Cabriolet">Кабриолет</option>
+		</select>
+		</div>
+		</fieldset>
+		<fieldset>
+		<div>
+		<label for="Car Brand">Выберете Марку Авто</label>
+		<select name="Car Brand" id="Car Brand">
+			<option value="">--Пожалуйста Выберете Марку Авто--</option>
+			<option value="Mercedes Benz">Mercedes Benz</option>
+			<option value="Porsche">Porsche</option>
+			<option value="Toyota">Toyota</option>
+			<option value="Mitsubishi">Mitsubishi</option>
+			<option value="Volkswagen">Volkswagen</option>
+			<option value="Infinity">Infinity</option>
+		</select>
+		</div>
+		</fieldset>
+		<fieldset>
+		<div>
+		<label for="Country Manufacturer">Выберете Страну Производитель</label>
+		<select name="Country Manufacturer" id="Country Manufacturer">
+			<option value="">--Пожалуйста Страну Производитель--</option>
+			<option value="Germany">Германия</option>
+			<option value="Japan">Япония</option>
+			<option value="China">Китай</option>
+			<option value="Ukraine">Украина</option>
+			<option value="USA">США</option>
+			<option value="Italy">Италия</option>
+		</select>
+		</div>
+		</fieldset>
+		<fieldset>
+		<div>
+		<label for="Car Cost">Стоимость Авто</label>
+			<input type="number" name="Cost1" id="Car Cost" placeholder="--От--" min="2000" max="9999">
+			<input type="number" name="Cost2" id="Car Cost" placeholder="--До--" min="2000" max="9999">
+		</div>
+		</fieldset>
+		<fieldset>
+		<div>
+		<label for="Year of issue">Выберете Год Выпуска Авто</label>
+		<select name="Year of issue" id="Year of issue">
+			<option value="">--ОТ--</option>
+			<option value="2020">2020</option>
+			<option value="2021">2021</option>
+			<option value="2022">2022</option>
+			<option value="2023">2023</option>
+			<option value="2024">2024</option>
+			<option value="2025">2025</option>
+		</select>
+		<select name="Year of issue" id="Year of issue">
+			<option value="">--ДО--</option>
+			<option value="2020">2020</option>
+			<option value="2021">2021</option>
+			<option value="2022">2022</option>
+			<option value="2023">2023</option>
+			<option value="2024">2024</option>
+			<option value="2025">2025</option>
+		</select>
+		</div>
+		</fieldset>
 
+		
 	</form>
 
 </body>
